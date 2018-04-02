@@ -1,9 +1,8 @@
-package domainmodel.model.module.repository
+package domainmodel.model.module
 
 import domainmodel.model.categorie.Categorie
 import domainmodel.model.gamme.Gamme
 import domainmodel.model.instancedemodule.InstanceDeModule
-import java.awt.ComponentOrientation
 
 class Module constructor(idModule: Int,
                          libelleModule: String,
