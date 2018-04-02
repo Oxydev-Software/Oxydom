@@ -5,32 +5,21 @@ import domainmodel.model.projet.Projet
 import domainmodel.model.tva.Tva
 import java.time.ZonedDateTime
 
-class Maquette  constructor(
-        idMaquette : Int,
-        libelleMaquette : String,
-        codeMaquette : String,
-        numeroDevis : String,
-        dateCreationDevis : ZonedDateTime,
-        dateLimiteValidite : ZonedDateTime,
-        dureeTravauxEstimee : Int,
-        commentaire : String,
-        status : String,
-        instanceDeModules: List<InstanceDeModule>,
-        tva : Tva,
-        projet : Projet
+data class Maquette (
+        var idMaquette : Int,
+        var libelleMaquette : String,
+        var codeMaquette : String,
+        var numeroDevis : String,
+        var dateCreationDevis : ZonedDateTime,
+        var dateLimiteValidite : ZonedDateTime,
+        var dureeTravauxEstimee : Int,
+        var commentaire : String,
+        var status : String,
+        var instanceDeModules: List<InstanceDeModule>,
+        var tva : Tva,
+        var projet : Projet
 ){
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return javaClass.hashCode()
-    }
-
     override fun toString(): String {
-        return "Maquette()"
+        return "Maquette(idMaquette=$idMaquette, libelleMaquette='$libelleMaquette', codeMaquette='$codeMaquette', numeroDevis='$numeroDevis', dateCreationDevis=$dateCreationDevis, dateLimiteValidite=$dateLimiteValidite, dureeTravauxEstimee=$dureeTravauxEstimee, commentaire='$commentaire', status='$status', instanceDeModules=$instanceDeModules, tva=$tva, projet=$projet)"
     }
 }

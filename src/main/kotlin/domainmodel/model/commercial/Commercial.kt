@@ -3,31 +3,19 @@ package domainmodel.model.commercial
 import domainmodel.model.agence.Agence
 import domainmodel.model.projet.Projet
 
-class Commercial constructor(
-        idCommercial : Int,
-        prenom : String,
-        nom : String,
-        email : String,
-        codeCommercial : String,
-        telephone : String,
-        motDePasse : String,
-        pourcentageCommission : Float,
-        agence : Agence,
-        projets : List<Projet>
+data class Commercial(
+        var idCommercial : Int,
+        var prenom : String,
+        var nom : String,
+        var email : String,
+        var codeCommercial : String,
+        var telephone : String,
+        var motDePasse : String,
+        var pourcentageCommission : Float,
+        var agence : Agence,
+        var projets : List<Projet>
 ) {
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return javaClass.hashCode()
-    }
-
     override fun toString(): String {
-        return "Commercial()"
+        return "Commercial(idCommercial=$idCommercial, prenom='$prenom', nom='$nom', email='$email', codeCommercial='$codeCommercial', telephone='$telephone', motDePasse='$motDePasse', pourcentageCommission=$pourcentageCommission, agence=$agence, projets=$projets)"
     }
-
-
 }

@@ -2,32 +2,20 @@ package domainmodel.model.client
 
 import domainmodel.model.projet.Projet
 
-class Client constructor(
-        idClient: Int,
-        prenom : String,
-        nom : String,
-        email : String,
-        adresse : String,
-        ville : String,
-        pays : String,
-        telephone : String,
-        photo : String,
-        civilite : String,
-        projets : List<Projet>
+data class Client constructor(
+        var idClient: Int,
+        var prenom : String,
+        var nom : String,
+        var email : String,
+        var adresse : String,
+        var ville : String,
+        var pays : String,
+        var telephone : String,
+        var photo : String,
+        var civilite : String,
+        var projets : List<Projet>
 ){
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return javaClass.hashCode()
-    }
-
     override fun toString(): String {
-        return "Client()"
+        return "Client(idClient=$idClient, prenom='$prenom', nom='$nom', email='$email', adresse='$adresse', ville='$ville', pays='$pays', telephone='$telephone', photo='$photo', civilite='$civilite', projets=$projets)"
     }
-
-
 }

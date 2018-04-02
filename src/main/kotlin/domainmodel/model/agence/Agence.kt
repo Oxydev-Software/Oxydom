@@ -2,28 +2,16 @@ package domainmodel.model.agence
 
 import domainmodel.model.fournisseur.Fournisseur
 
-class Agence constructor(
-        idAgence: Int,
-        telephone : String,
-        codeAgence : String,
-        adresse : String,
-        ville : String,
-        pays : String,
-        fournisseurs : List<Fournisseur>
+data class Agence(
+        var idAgence: Int,
+        var telephone : String,
+        var codeAgence : String,
+        var adresse : String,
+        var ville : String,
+        var pays : String,
+        var fournisseurs : List<Fournisseur>
 ){
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return javaClass.hashCode()
-    }
-
     override fun toString(): String {
-        return "Agence()"
+        return "Agence(idAgence=$idAgence, telephone='$telephone', codeAgence='$codeAgence', adresse='$adresse', ville='$ville', pays='$pays', fournisseurs=$fournisseurs)"
     }
-
-
 }

@@ -3,34 +3,22 @@ package domainmodel.model.instancedemodule
 import domainmodel.model.categorie.Categorie
 import domainmodel.model.gamme.Gamme
 
-class InstanceDeModule constructor(idModule: Int,
-                                   libelleModule: String,
-                                   prix: Float,
-                                   longueur: Float,
-                                   largeur: Float,
-                                   epaisseur: Float,
-                                   commentaire: String,
-                                   instancesDeModules : List<InstanceDeModule>,
-                                   categorie : Categorie,
-                                   valide : Boolean,
-                                   gamme : Gamme,
-                                   coordonneesX : Float,
-                                   coordonnesY : Float,
-                                   orientation: Float){
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return javaClass.hashCode()
-    }
-
+data class InstanceDeModule(
+        var idModule: Int,
+        var libelleModule: String,
+        var prix: Float,
+        var longueur: Float,
+        var largeur: Float,
+        var epaisseur: Float,
+        var commentaire: String,
+        var instancesDeModules: List<InstanceDeModule>,
+        var categorie: Categorie,
+        var valide: Boolean,
+        var gamme: Gamme,
+        var coordonneesX: Float,
+        var coordonnesY: Float,
+        var orientation: Float) {
     override fun toString(): String {
-        return "InstanceDeModule()"
+        return "InstanceDeModule(idModule=$idModule, libelleModule='$libelleModule', prix=$prix, longueur=$longueur, largeur=$largeur, epaisseur=$epaisseur, commentaire='$commentaire', instancesDeModules=$instancesDeModules, categorie=$categorie, valide=$valide, gamme=$gamme, coordonneesX=$coordonneesX, coordonnesY=$coordonnesY, orientation=$orientation)"
     }
-
-
 }
