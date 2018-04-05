@@ -1,11 +1,12 @@
-package domainmodel.model.maquette
+package portadapter.persistence.entity
 
 import domainmodel.model.instancedemodule.InstanceDeModule
 import domainmodel.model.projet.Projet
 import domainmodel.model.tva.Tva
 import java.time.ZonedDateTime
 
-data class Maquette (
+data class EMaquette (
+        var idMaquette : Int,
         var libelleMaquette : String,
         var codeMaquette : String,
         var numeroDevis : String,
@@ -14,8 +15,9 @@ data class Maquette (
         var dureeTravauxEstimee : Int,
         var commentaire : String,
         var status : String,
-        var instanceDeModules: List<InstanceDeModule>,
-        var tva : Tva,
-        var projet : Projet
+        var einstanceDeModules: List<EInstanceDeModule>,
+        var etva : ETva,
+        var eprojet : EProjet
 ){
+
 }

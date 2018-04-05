@@ -1,50 +1,55 @@
 package portadapter.persistence.converter
 
+import dagger.Component
 import domainmodel.model.agence.Agence
+import portadapter.persistence.entity.EAgence
+import java.util.*
+import java.util.stream.Collectors
+import javax.inject.Inject
 
+@Component
 class AgenceConverter {
+    @Inject
+    lateinit var fournisseurConverter : FournisseurConverter
+    fun fromModelToEntity(agence : Agence) : Optional<EAgence> {
 
-    fun fromDomainToEntity(agence : Agence) : portadapter.persistence.entity.Agence{
-
-        val agenceEntity = portadapter.persistence.entity.Agence(
+        val agenceEntity = EAgence(
                 agence.idAgence,
                 agence.telephone,
                 agence.codeAgence,
                 agence.adresse,
                 agence.ville,
                 agence.pays,
-                agence.fournisseurs)
+                fournisseurConverter.fromModelsToEntities(agence.fournisseurs))
 
-        return agenceEntity
+        return Optional.of(agenceEntity)
     }
 
-    fun fromEntityToDomain(agence : portadapter.persistence.entity.Agence) : Agence{
+    fun fromEntityToModel(eAgence : EAgence) : Optional<Agence> {
+        if (null == eAgence){
+            return Optional.empty();
+        }
+        val agence = Agence(eAgence.idAgence,
+                eAgence.telephone,
+                eAgence.codeAgence,
+                eAgence.adresse,
+                eAgence.ville,
+                eAgence.pays,
+                fournisseurConverter.fromEntitiesToModel(eAgence.efournisseurs))
 
-        val agence = Agence(agence.idAgence,
-                agence.telephone,
-                agence.codeAgence,
-                agence.adresse,
-                agence.ville,
-                agence.pays,
-                agence.fournisseurs)
-
-        return agence
+        return Optional.of(agence);
     }
 
-    fun fromEntitiesToDomain(agenceEntities : List<portadapter.persistence.entity.Agence>) : List<Agence>{
-        val agences = ArrayList<Agence>()
-
-        for(agence in agenceEntities){
-            val agence = Agence(agence.idAgence,
-                    agence.telephone,
-                    agence.codeAgence,
-                    agence.adresse,
-                    agence.ville,
-                    agence.pays,
-                    agence.fournisseurs)
-            agences.add(agence)
+    fun fromEntitiesToModels(agenceEntities : List<EAgence>) : List<Agence>{
+        if (agenceEntities.isEmpty()){
+            return Arrays.asList();
         }
 
+        val agences = agenceEntities.stream()
+                .map(this::fromEntityToModel)
+                .filter(Optional<Agence>::isPresent)
+                .map(Optional<Agence>::get)
+                .collect(Collectors.toList())
         return agences
     }
 }

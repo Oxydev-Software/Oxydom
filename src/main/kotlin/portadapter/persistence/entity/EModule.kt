@@ -1,20 +1,19 @@
-package domainmodel.model.instancedemodule
+package portadapter.persistence.entity
 
 import domainmodel.model.categorie.Categorie
 import domainmodel.model.gamme.Gamme
+import domainmodel.model.instancedemodule.InstanceDeModule
 
-data class InstanceDeModule(
+data class EModule(
+        var idModule: Int,
         var libelleModule: String,
         var prix: Float,
         var longueur: Float,
         var largeur: Float,
         var epaisseur: Float,
         var commentaire: String,
-        var instancesDeModules: List<InstanceDeModule>,
+        var einstancesDeModules: List<EInstanceDeModule>,
         var categorie: Categorie,
         var valide: Boolean,
-        var gamme: Gamme,
-        var coordonneesX: Float,
-        var coordonnesY: Float,
-        var orientation: Float) {
+        var egamme: EGamme) {
 }

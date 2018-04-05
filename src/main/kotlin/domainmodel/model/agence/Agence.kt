@@ -11,7 +11,4 @@ data class Agence(
         var pays : String,
         var fournisseurs : List<Fournisseur>
 ){
-    override fun toString(): String {
-        return "Agence(idAgence=$idAgence, telephone='$telephone', codeAgence='$codeAgence', adresse='$adresse', ville='$ville', pays='$pays', fournisseurs=$fournisseurs)"
-    }
 }

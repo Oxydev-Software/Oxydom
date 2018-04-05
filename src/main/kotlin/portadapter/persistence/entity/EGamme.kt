@@ -1,6 +1,6 @@
-package domainmodel.model.gamme
+package portadapter.persistence.entity
 
-data class Gamme(
+data class EGamme (
         var libelleGamme: String,
         var bonusIndividuel : Float,
         var bonusSet: Float

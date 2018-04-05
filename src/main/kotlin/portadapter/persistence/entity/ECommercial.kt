@@ -1,9 +1,10 @@
-package domainmodel.model.commercial
+package portadapter.persistence.entity
 
 import domainmodel.model.agence.Agence
 import domainmodel.model.projet.Projet
 
-data class Commercial(
+data class ECommercial(
+        var idCommercial : Int,
         var prenom : String,
         var nom : String,
         var email : String,
@@ -11,7 +12,7 @@ data class Commercial(
         var telephone : String,
         var motDePasse : String,
         var pourcentageCommission : Float,
-        var agence : Agence,
-        var projets : List<Projet>
+        var eagence : EAgence,
+        var eprojets : List<EProjet>
 ) {
 }

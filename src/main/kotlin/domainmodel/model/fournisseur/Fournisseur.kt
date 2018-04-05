@@ -10,10 +10,6 @@ data class Fournisseur(
         var ville: String,
         var pays: String,
         var email: String,
-        var telephone: String,
-        var agence: List<Agence>
+        var telephone: String
 ) {
-    override fun toString(): String {
-        return "Fournisseur(idFournisseur=$idFournisseur, numeroSiret='$numeroSiret', nom='$nom', adresse='$adresse', ville='$ville', pays='$pays', email='$email', telephone='$telephone', agence=$agence)"
-    }
 }

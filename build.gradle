@@ -22,6 +22,8 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile group: 'org.mybatis', name: 'mybatis', version: '3.4.4'
+    compile group: 'com.google.dagger', name: 'dagger', version: '2.15'
+
 }
 
 compileKotlin {
