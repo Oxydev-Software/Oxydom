@@ -1,6 +1,7 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.commercial.repository.CommercialRepository
+import dagger.Component
+import domain.model.commercial.repository.CommercialRepository
 
 class CommercialRepositoryImpl : CommercialRepository {
     override fun retrieveById(idCommercial: Int) {

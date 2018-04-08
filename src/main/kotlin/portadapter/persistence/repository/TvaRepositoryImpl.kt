@@ -1,6 +1,8 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.tva.repository.TvaRepository
+import dagger.Component
+import domain.model.tva.repository.TvaRepository
+
 
 class TvaRepositoryImpl : TvaRepository {
     override fun retrieveById(idTva: Int) {

@@ -1,7 +1,7 @@
 package portadapter.persistence.entity
 
-import domainmodel.model.agence.Agence
-import domainmodel.model.projet.Projet
+import domain.model.agence.Agence
+import domain.model.projet.Projet
 
 data class ECommercial(
         var idCommercial : Int,

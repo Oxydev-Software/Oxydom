@@ -1,7 +1,8 @@
 package portadapter.persistence.factory
 
-import domainmodel.model.maquette.Maquette
-import domainmodel.model.maquette.factory.MaquetteFactory
+import dagger.Component
+import domain.model.maquette.Maquette
+import domain.model.maquette.factory.MaquetteFactory
 
 class MaquetteFactoryImpl : MaquetteFactory {
     override fun create(maquette: Maquette) {

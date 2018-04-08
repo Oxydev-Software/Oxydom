@@ -2,11 +2,11 @@ package application.impl
 
 import application.AgenceApplication
 import dagger.Component
-import domainmodel.model.agence.Agence
-import domainmodel.model.agence.repository.AgenceRepository
+import domain.model.agence.Agence
+import domain.model.agence.repository.AgenceRepository
 import javax.inject.Inject
 
-@Component
+
 class AgenceApplicationImpl : AgenceApplication{
     @Inject
     lateinit var repository: AgenceRepository

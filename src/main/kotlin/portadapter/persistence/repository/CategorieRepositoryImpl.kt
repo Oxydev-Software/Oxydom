@@ -1,6 +1,7 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.categorie.repository.CategorieRepository
+import dagger.Component
+import domain.model.categorie.repository.CategorieRepository
 
 class CategorieRepositoryImpl : CategorieRepository {
     override fun retrieveById(idCategorie: Int) {

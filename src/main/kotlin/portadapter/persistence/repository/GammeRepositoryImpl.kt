@@ -1,7 +1,9 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.gamme.Gamme
-import domainmodel.model.gamme.repository.GammeRepository
+import dagger.Component
+import domain.model.gamme.Gamme
+import domain.model.gamme.repository.GammeRepository
+
 
 class GammeRepositoryImpl : GammeRepository {
     override fun retrieveById(idGamme: Int) {

@@ -1,7 +1,9 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.intervention.Intervention
-import domainmodel.model.intervention.repository.InterventionRepository
+import dagger.Component
+import domain.model.intervention.Intervention
+import domain.model.intervention.repository.InterventionRepository
+
 
 class InterventionRepositoryImpl : InterventionRepository {
     override fun retrieveById(idIntervention: Int) {

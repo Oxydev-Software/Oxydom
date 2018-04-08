@@ -1,17 +1,16 @@
 package portadapter.persistence.converter
 
-import dagger.Component
-import domainmodel.model.agence.Agence
+import domain.model.agence.Agence
 import portadapter.persistence.entity.EAgence
 import java.util.*
 import java.util.stream.Collectors
 import javax.inject.Inject
 
-@Component
 class AgenceConverter {
     @Inject
-    lateinit var fournisseurConverter : FournisseurConverter
-    fun fromModelToEntity(agence : Agence) : Optional<EAgence> {
+    lateinit var fournisseurConverter: FournisseurConverter
+
+    fun fromModelToEntity(agence: Agence): Optional<EAgence> {
 
         val agenceEntity = EAgence(
                 agence.idAgence,
@@ -25,8 +24,8 @@ class AgenceConverter {
         return Optional.of(agenceEntity)
     }
 
-    fun fromEntityToModel(eAgence : EAgence) : Optional<Agence> {
-        if (null == eAgence){
+    fun fromEntityToModel(eAgence: EAgence): Optional<Agence> {
+        if (null == eAgence) {
             return Optional.empty();
         }
         val agence = Agence(eAgence.idAgence,
@@ -35,14 +34,14 @@ class AgenceConverter {
                 eAgence.adresse,
                 eAgence.ville,
                 eAgence.pays,
-                fournisseurConverter.fromEntitiesToModel(eAgence.efournisseurs))
+                fournisseurConverter.fromEntitiesToModels(eAgence.efournisseurs))
 
         return Optional.of(agence);
     }
 
-    fun fromEntitiesToModels(agenceEntities : List<EAgence>) : List<Agence>{
-        if (agenceEntities.isEmpty()){
-            return Arrays.asList();
+    fun fromEntitiesToModels(agenceEntities: List<EAgence>): List<Agence> {
+        if (agenceEntities.isEmpty()) {
+            return emptyList()
         }
 
         val agences = agenceEntities.stream()
@@ -51,5 +50,19 @@ class AgenceConverter {
                 .map(Optional<Agence>::get)
                 .collect(Collectors.toList())
         return agences
+    }
+
+    fun fromModelsToEntities(agences: List<Agence>): List<EAgence> {
+        if (agences.isEmpty()) {
+            return emptyList()
+        }
+
+        val agenceEntities = agences.stream()
+                .map(this::fromModelToEntity)
+                .filter(Optional<EAgence>::isPresent)
+                .map(Optional<EAgence>::get)
+                .collect(Collectors.toList())
+
+        return agenceEntities;
     }
 }

@@ -1,7 +1,9 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.maquette.Maquette
-import domainmodel.model.maquette.repository.MaquetteRepository
+import dagger.Component
+import domain.model.maquette.Maquette
+import domain.model.maquette.repository.MaquetteRepository
+
 
 class MaquetteRepositoryImpl : MaquetteRepository {
     override fun retrieveById(idMaquette: Int) {

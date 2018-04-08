@@ -1,7 +1,9 @@
 package portadapter.persistence.factory
 
-import domainmodel.model.client.Client
-import domainmodel.model.client.factory.ClientFactory
+import dagger.Component
+import domain.model.client.Client
+import domain.model.client.factory.ClientFactory
+
 
 class ClientFactoryImpl : ClientFactory {
     override fun create(client: Client) {

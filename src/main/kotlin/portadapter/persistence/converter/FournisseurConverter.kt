@@ -1,17 +1,14 @@
 package portadapter.persistence.converter
 
-import dagger.Component
-import domainmodel.model.fournisseur.Fournisseur
+import domain.model.fournisseur.Fournisseur
 import portadapter.persistence.entity.EFournisseur
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
-@Component
 class FournisseurConverter {
 
-    fun fromDomainToEntity(fournisseur : Fournisseur) : Optional<EFournisseur>{
-        if (null == fournisseur){
+    fun fromModelToEntity(fournisseur: Fournisseur): Optional<EFournisseur> {
+        if (null == fournisseur) {
             return Optional.empty()
         }
 
@@ -28,8 +25,8 @@ class FournisseurConverter {
         return Optional.of(entity)
     }
 
-    fun fromEntityToDomain(eFournisseur: EFournisseur) : Optional<Fournisseur>{
-        if(null == eFournisseur){
+    fun fromEntityToModel(eFournisseur: EFournisseur): Optional<Fournisseur> {
+        if (null == eFournisseur) {
             return Optional.empty()
         }
 
@@ -46,28 +43,28 @@ class FournisseurConverter {
         return Optional.of(model)
     }
 
-    fun fromModelsToEntities(fournisseurs : List<Fournisseur>) : List<EFournisseur>{
-        if (fournisseurs.isEmpty()){
-            return Arrays.asList()
+    fun fromModelsToEntities(fournisseurs: List<Fournisseur>): List<EFournisseur> {
+        if (fournisseurs.isEmpty()) {
+            return emptyList()
         }
 
         val entities = fournisseurs
                 .stream()
-                .map(this::fromDomainToEntity)
+                .map(this::fromModelToEntity)
                 .filter(Optional<EFournisseur>::isPresent)
                 .map(Optional<EFournisseur>::get)
                 .collect(Collectors.toList())
         return entities
     }
 
-    fun fromEntitiesToModel(efournisseurs : List<EFournisseur>) : List<Fournisseur>{
-        if(efournisseurs.isEmpty()){
-            return Arrays.asList()
+    fun fromEntitiesToModels(efournisseurs: List<EFournisseur>): List<Fournisseur> {
+        if (efournisseurs.isEmpty()) {
+            return emptyList()
         }
 
         val models = efournisseurs
                 .stream()
-                .map(this::fromEntityToDomain)
+                .map(this::fromEntityToModel)
                 .filter(Optional<Fournisseur>::isPresent)
                 .map(Optional<Fournisseur>::get)
                 .collect(Collectors.toList())

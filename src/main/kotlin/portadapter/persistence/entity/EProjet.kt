@@ -1,12 +1,12 @@
 package portadapter.persistence.entity
 
-import domainmodel.model.client.Client
-import domainmodel.model.commercial.Commercial
-import domainmodel.model.intervention.Intervention
-import domainmodel.model.maquette.Maquette
+import domain.model.client.Client
+import domain.model.commercial.Commercial
+import domain.model.intervention.Intervention
+import domain.model.maquette.Maquette
 
 data class EProjet (
-        var idProjet : String,
+        var idProjet : Int,
         var libelleProjet : String,
         var codeProjet : String,
         var statutProjet : String,

@@ -1,12 +1,16 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.agence.Agence
-import domainmodel.model.agence.repository.AgenceRepository
+import dagger.Component
+import domain.model.agence.Agence
+import domain.model.agence.repository.AgenceRepository
 import portadapter.persistence.converter.AgenceConverter
 import portadapter.persistence.mapper.AgenceMapper
 import java.util.*
+import javax.inject.Inject
+
 
 class AgenceRepositoryImpl : AgenceRepository {
+    @Inject
     lateinit var mapper: AgenceMapper
     val converter = AgenceConverter()
 
@@ -14,7 +18,7 @@ class AgenceRepositoryImpl : AgenceRepository {
         val agenceEntity  = mapper.retrieveById(idAgence)
         assertNotNull(agenceEntity)
 
-        return converter.fromEntityToModel(agenceEntity.orElse(null))
+        return converter.fromEntityToModel(agenceEntity.get())
     }
 
     override fun retrieveList(): List<Agence> {
@@ -31,7 +35,7 @@ class AgenceRepositoryImpl : AgenceRepository {
     }
 
     fun assertNotEmpty(agences: List<portadapter.persistence.entity.EAgence>){
-        if (agences.size == 0){
+        if (agences.isEmpty()){
             throw Exception("empty list of agencies")
         }
     }

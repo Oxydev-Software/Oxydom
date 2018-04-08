@@ -1,7 +1,8 @@
 package portadapter.persistence.factory
 
-import domainmodel.model.intervention.Intervention
-import domainmodel.model.intervention.factory.InterventionFactory
+import dagger.Component
+import domain.model.intervention.Intervention
+import domain.model.intervention.factory.InterventionFactory
 
 class InterventionFactoryImpl : InterventionFactory {
     override fun create(intervention: Intervention) {

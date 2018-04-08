@@ -1,7 +1,8 @@
 package portadapter.persistence.repository
 
-import domainmodel.model.client.Client
-import domainmodel.model.client.repository.ClientRepository
+import dagger.Component
+import domain.model.client.Client
+import domain.model.client.repository.ClientRepository
 
 class ClientRepositoryImpl : ClientRepository {
     override fun retrieveById(idClient: Int) {

@@ -1,12 +1,13 @@
 package portadapter.persistence.entity
 
-import domainmodel.model.commercial.Commercial
-import domainmodel.model.projet.Projet
+import domain.model.commercial.Commercial
+import domain.model.projet.Projet
 import java.time.ZonedDateTime
 
 class EIntervention(
+        var idIntervention : Int,
         var dateIntervention: ZonedDateTime,
-        var eprojet : EProjet,
-        var ecommercial : ECommercial
+        var ecommercial : ECommercial,
+        var eprojet : EProjet
 ) {
 }

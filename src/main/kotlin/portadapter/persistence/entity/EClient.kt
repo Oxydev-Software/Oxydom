@@ -1,6 +1,6 @@
 package portadapter.persistence.entity
 
-import domainmodel.model.projet.Projet
+import domain.model.projet.Projet
 
 data class EClient(
         var idClient: Int,

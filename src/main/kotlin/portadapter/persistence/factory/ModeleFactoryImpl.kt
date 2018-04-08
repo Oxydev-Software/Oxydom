@@ -1,7 +1,8 @@
 package portadapter.persistence.factory
 
-import domainmodel.model.modele.Modele
-import domainmodel.model.modele.factory.ModeleFactory
+import dagger.Component
+import domain.model.modele.Modele
+import domain.model.modele.factory.ModeleFactory
 
 class ModeleFactoryImpl : ModeleFactory {
     override fun create(modele: Modele) {
