@@ -7,7 +7,7 @@ import java.util.stream.Collectors
 import javax.inject.Inject
 
 class InterventionConverter {
-    //TODO
+
     @Inject
     lateinit var commercialConverter: CommercialConverter
     @Inject

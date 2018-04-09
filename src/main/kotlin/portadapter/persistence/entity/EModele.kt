@@ -6,7 +6,7 @@ data class EModele(
         var idModele : Int,
         var libelleModele : String,
         var prix : Float,
-        var modules : List<Module>
+        var eModules : List<EModule>
 ){
 
 }

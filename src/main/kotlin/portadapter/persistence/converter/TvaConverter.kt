@@ -8,13 +8,26 @@ import java.util.*
 import java.util.stream.Collectors
 
 class TvaConverter {
-    //TODO
     fun fromModelToEntity(tva: Tva): Optional<ETva> {
-        return Optional.empty()
+        if (null == tva){
+            return Optional.empty()
+        }
+        val entity  = ETva(
+                tva.idTva,
+                tva.taux
+                )
+        return Optional.of(entity)
     }
 
     fun fromEntityToModel(eTva: ETva): Optional<Tva> {
-        return Optional.empty()
+        if(null == eTva){
+            return Optional.empty()
+        }
+        val model = Tva(
+                eTva.idTva,
+                eTva.taux
+        )
+        return Optional.of(model)
     }
 
     fun fromEntitiesToModels(tvaEntities: List<ETva>): List<Tva> {
