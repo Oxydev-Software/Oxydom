@@ -12,8 +12,7 @@ data class EModule(
         var largeur: Float,
         var epaisseur: Float,
         var commentaire: String,
-        var einstancesDeModules: List<EInstanceDeModule>,
-        var categorie: Categorie,
+        var ecategorie: ECategorie,
         var valide: Boolean,
         var egamme: EGamme) {
 }

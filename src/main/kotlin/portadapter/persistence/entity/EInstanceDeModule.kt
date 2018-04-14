@@ -5,18 +5,19 @@ import domain.model.gamme.Gamme
 import domain.model.instancedemodule.InstanceDeModule
 
 data class EInstanceDeModule(
-        var idModule: Int,
+        var idInstanceDeModule: Int,
         var libelleModule: String,
         var prix: Float,
         var longueur: Float,
         var largeur: Float,
         var epaisseur: Float,
         var commentaire: String,
-        var einstancesDeModules: List<EInstanceDeModule>,
-        var categorie: Categorie,
+        var ecategorie: ECategorie,
         var valide: Boolean,
         var egamme: EGamme,
         var coordonneesX: Float,
-        var coordonnesY: Float,
-        var orientation: Float) {
+        var coordonneesY: Float,
+        var orientation: Float,
+        var eMaquette: EMaquette,
+        var eModule: EModule) {
 }
