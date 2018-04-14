@@ -18,13 +18,6 @@ class AgenceApplicationImpl : AgenceApplication{
 
     override fun retrieveById(idAgence : Int): Agence {
         val agence =  repository.retrieveById(idAgence).get()
-        assertIsPresent(agence)
         return agence
-    }
-
-    fun assertIsPresent(agence : Agence){
-        if(null == agence){
-            throw Exception("id doesn't match with any agence")
-        }
     }
 }

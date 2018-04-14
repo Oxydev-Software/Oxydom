@@ -17,13 +17,7 @@ class FournisseurApplicationImpl :  FournisseurApplication{
 
     override fun retrieveById(idFournisseur : Int): Fournisseur {
         val fournisseur =  repository.retrieveById(idFournisseur).get()
-        assertIsPresent(fournisseur)
         return fournisseur
     }
 
-    fun assertIsPresent(fournisseur : Fournisseur){
-        if(null == fournisseur){
-            throw Exception("id doesn't match with any fournisseur")
-        }
-    }
 }
