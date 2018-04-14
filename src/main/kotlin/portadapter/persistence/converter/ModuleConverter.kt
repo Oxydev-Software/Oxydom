@@ -11,8 +11,6 @@ class ModuleConverter {
     lateinit var categorieConverter : CategorieConverter
     @Inject
     lateinit var gammeConverter : GammeConverter
-    @Inject
-    lateinit var instanceDeModuleConverter: InstanceDeModuleConverter
 
     fun fromModelToEntity(module: Module): Optional<EModule> {
         if(null == module){
@@ -27,7 +25,6 @@ class ModuleConverter {
                 module.largeur,
                 module.epaisseur,
                 module.commentaire,
-                instanceDeModuleConverter.fromModelsToEntities(module.instancesDeModules),
                 categorieConverter.fromModelToEntity(module.categorie).orElse(null),
                 module.valide,
                 gammeConverter.fromModelToEntity(module.gamme).orElse(null)
@@ -48,7 +45,6 @@ class ModuleConverter {
                 eModule.largeur,
                 eModule.epaisseur,
                 eModule.commentaire,
-                instanceDeModuleConverter.fromEntitiesToModels(eModule.einstancesDeModules),
                 categorieConverter.fromEntityToModel(eModule.ecategorie).orElse(null),
                 eModule.valide,
                 gammeConverter.fromEntityToModel(eModule.egamme).orElse(null)

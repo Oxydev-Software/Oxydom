@@ -10,6 +10,7 @@ data class Fournisseur(
         var ville: String,
         var pays: String,
         var email: String,
-        var telephone: String
+        var telephone: String,
+        var agences : List<Agence>
 ) {
 }

@@ -1,6 +1,7 @@
 package portadapter.persistence.converter
 
 import domain.model.instancedemodule.InstanceDeModule
+import domain.model.maquette.repository.MaquetteRepository
 import portadapter.persistence.entity.EInstanceDeModule
 import java.util.*
 import java.util.stream.Collectors
@@ -11,6 +12,10 @@ class InstanceDeModuleConverter {
     lateinit var categorieConverter : CategorieConverter
     @Inject
     lateinit var gammeConverter : GammeConverter
+    @Inject
+    lateinit var maquetteConverter: MaquetteConverter
+    @Inject
+    lateinit var moduleConverter: ModuleConverter
 
     fun fromModelToEntity(instanceDeModule: InstanceDeModule): Optional<EInstanceDeModule> {
         if(null == instanceDeModule){
@@ -30,7 +35,10 @@ class InstanceDeModuleConverter {
                 gammeConverter.fromModelToEntity(instanceDeModule.gamme).orElse(null),
                 instanceDeModule.coordonneesX,
                 instanceDeModule.coordonneesY,
-                instanceDeModule.orientation
+                instanceDeModule.orientation,
+                maquetteConverter.fromModelToEntity(instanceDeModule.maquette).orElse(null),
+                moduleConverter.fromModelToEntity(instanceDeModule.module).orElse(null)
+
         )
         return Optional.of(entity)
     }
@@ -54,7 +62,9 @@ class InstanceDeModuleConverter {
                 gammeConverter.fromEntityToModel(eInstanceDeModule.egamme).orElse(null),
                 eInstanceDeModule.coordonneesX,
                 eInstanceDeModule.coordonneesY,
-                eInstanceDeModule.orientation
+                eInstanceDeModule.orientation,
+                maquetteConverter.fromEntityToModel(eInstanceDeModule.eMaquette).orElse(null),
+                moduleConverter.fromEntityToModel(eInstanceDeModule.eModule).orElse(null)
         )
         return Optional.of(model)
     }

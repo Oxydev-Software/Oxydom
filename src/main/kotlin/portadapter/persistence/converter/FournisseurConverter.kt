@@ -4,8 +4,12 @@ import domain.model.fournisseur.Fournisseur
 import portadapter.persistence.entity.EFournisseur
 import java.util.*
 import java.util.stream.Collectors
+import javax.inject.Inject
 
 class FournisseurConverter {
+
+    @Inject
+    lateinit var agenceConverter : AgenceConverter
 
     fun fromModelToEntity(fournisseur: Fournisseur): Optional<EFournisseur> {
         if (null == fournisseur) {
@@ -20,7 +24,8 @@ class FournisseurConverter {
                 fournisseur.ville,
                 fournisseur.pays,
                 fournisseur.email,
-                fournisseur.telephone)
+                fournisseur.telephone,
+                agenceConverter.fromModelsToEntities(fournisseur.agences))
 
         return Optional.of(entity)
     }
@@ -38,7 +43,8 @@ class FournisseurConverter {
                 eFournisseur.ville,
                 eFournisseur.pays,
                 eFournisseur.adresse,
-                eFournisseur.telephone)
+                eFournisseur.telephone,
+                agenceConverter.fromEntitiesToModels(eFournisseur.eAgences))
 
         return Optional.of(model)
     }

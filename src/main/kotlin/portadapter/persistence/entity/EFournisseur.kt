@@ -10,5 +10,6 @@ data class EFournisseur (
     var ville: String,
     var pays: String,
     var email: String,
-    var telephone: String){
+    var telephone: String,
+    var eAgences : List<EAgence>){
 }

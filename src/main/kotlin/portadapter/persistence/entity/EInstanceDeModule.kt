@@ -17,5 +17,7 @@ data class EInstanceDeModule(
         var egamme: EGamme,
         var coordonneesX: Float,
         var coordonneesY: Float,
-        var orientation: Float) {
+        var orientation: Float,
+        var eMaquette: EMaquette,
+        var eModule: EModule) {
 }
