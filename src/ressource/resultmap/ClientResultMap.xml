@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<resultMap id="ClientResultMap" type="portadapter.persistence.entity.EClient">
+    <id property="idClient" column="id"/>
+    <result property="prenom" column="prenom"/>
+    <result property="nom" column="nom"/>
+    <result property="email" column="email"/>
+    <result property="adresse" column="adresse"/>
+    <result property="ville" column="ville"/>
+    <result property="pays" column="pays"/>
+    <result property="telephone" column="telephone"/>
+    <result property="photo" column="photo"/>
+    <result property="civilite" column="civilite"/>
+
+    <association resultMap="ProjetResultMap" javaType="portadapter.persistence.entity.EProjet"/>
+</resultMap>

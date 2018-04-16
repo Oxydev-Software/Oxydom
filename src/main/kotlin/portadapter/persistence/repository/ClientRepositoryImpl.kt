@@ -7,7 +7,9 @@ import portadapter.persistence.entity.EClient
 import portadapter.persistence.mapper.ClientMapper
 import java.util.*
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class ClientRepositoryImpl : ClientRepository {
     @Inject
     lateinit var clientMapper: ClientMapper
