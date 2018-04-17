@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper>
 <resultMap id="ClientResultMap" type="portadapter.persistence.entity.EClient">
     <id property="idClient" column="id"/>
     <result property="prenom" column="prenom"/>
@@ -12,5 +18,6 @@
     <result property="photo" column="photo"/>
     <result property="civilite" column="civilite"/>
 
-    <association resultMap="ProjetResultMap" javaType="portadapter.persistence.entity.EProjet"/>
+    <association property="eProjet" resultMap="ProjetResultMap" javaType="portadapter.persistence.entity.EProjet"/>
 </resultMap>
+</mapper>
