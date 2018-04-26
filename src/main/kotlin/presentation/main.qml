@@ -3,6 +3,7 @@ import QtQuick.Window 2.2
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import "Pages"
+import io.qt.examples.backend 1.0
 
 
 ApplicationWindow {
@@ -19,6 +20,9 @@ ApplicationWindow {
         visible: false
         width: parent.width
         z: 1
+        BackEnd {
+            id: backend
+        }
         RowLayout {
             spacing: 20
             anchors.fill: parent

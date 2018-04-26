@@ -27,6 +27,11 @@ ScrollView {
                     id: card
                     anchors.fill: parent
                     Rectangle {
+                        MouseArea{
+                            height: parent.height
+                            width: parent.width
+                            onClicked: stackView.push(Qt.resolvedUrl("Designer2D.qml"),{nomObjet:"Designer 2D"});
+                        }
                         width: parent.width
                         height: parent.height /3
                         color: "#8A9CFF"
