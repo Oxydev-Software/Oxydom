@@ -7,7 +7,7 @@
 
 <mapper>
 <resultMap id="ClientResultMap" type="portadapter.persistence.entity.EClient">
-    <id property="idClient" column="id"/>
+    <id property="id" column="id"/>
     <result property="prenom" column="prenom"/>
     <result property="nom" column="nom"/>
     <result property="email" column="email"/>

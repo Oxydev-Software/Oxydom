@@ -2,19 +2,13 @@ package portadapter.persistence.repository
 
 import domain.model.client.Client
 import domain.model.client.repository.ClientRepository
+import org.springframework.beans.factory.annotation.Autowired
 import portadapter.persistence.converter.ClientConverter
 import portadapter.persistence.entity.EClient
 import portadapter.persistence.mapper.ClientMapper
 import java.util.*
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class ClientRepositoryImpl : ClientRepository {
-    @Inject
-    lateinit var clientMapper: ClientMapper
-    @Inject
-    lateinit var clientConverter: ClientConverter
+class ClientRepositoryImpl @Autowired constructor(val clientConverter : ClientConverter, val clientMapper: ClientMapper) : ClientRepository {
 
     override fun safeRetrieveById(idClient: Int): Client {
         val client = clientConverter.fromEntityToModel(internalRetrieveEntity(idClient).get()).get()

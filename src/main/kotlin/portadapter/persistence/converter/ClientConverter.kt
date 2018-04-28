@@ -1,20 +1,19 @@
 package portadapter.persistence.converter
 
 import domain.model.client.Client
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import portadapter.persistence.entity.EClient
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
-class ClientConverter {
-
-    @Inject
-    lateinit var projetConverter: ProjetConverter
+@Component
+class ClientConverter @Autowired constructor(val projetConverter : ProjetConverter){
 
     fun fromModelToEntity(client: Client): Optional<EClient> {
 
         val clientEntity = EClient(
-                client.idClient,
+                client.id,
                 client.prenom,
                 client.nom,
                 client.email,
@@ -31,10 +30,10 @@ class ClientConverter {
 
     fun fromEntityToModel(eClient: EClient): Optional<Client> {
         if (null == eClient) {
-            return Optional.empty();
+            return Optional.empty()
         }
         val client = Client(
-                eClient.idClient,
+                eClient.id,
                 eClient.prenom,
                 eClient.nom,
                 eClient.email,

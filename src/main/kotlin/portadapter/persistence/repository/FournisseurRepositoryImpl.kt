@@ -1,6 +1,5 @@
 package portadapter.persistence.repository
 
-import dagger.Component
 import domain.model.fournisseur.Fournisseur
 import domain.model.fournisseur.repository.FournisseurRepository
 import java.util.*

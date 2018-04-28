@@ -3,28 +3,38 @@ package application.impl
 import application.ClientApplication
 import domain.model.client.Client
 import domain.model.client.repository.ClientRepository
+import org.springframework.beans.factory.annotation.Autowired
 import java.util.*
-import javax.inject.Inject
 
 class ClientApplicationImpl : ClientApplication{
-    @Inject
+    @Autowired
     lateinit var clientRepository: ClientRepository
 
     override fun retrieveById(idClient: Int) : Optional<Client>{
-         val client = clientRepository.retrieveById(idClient);
-        return client
+        return clientRepository.retrieveById(idClient)
     }
 
     override fun retrieveList() {
-        val clients = clientRepository.retrieveList();
-        return clients
+        return clientRepository.retrieveList();
     }
 
-    override fun update(idClient: Int,  command : ClientCommand)  : Client{
-        var client  = clientRepository.safeRetrieveById(idClient)
-        client.change(command)
-        val clientUpdated  = clientRepository.update(client)
-        return clientUpdated
+    override fun update(idClient: Int, clientCommand : ClientCommand)  : Client{
+        val client  = clientRepository.safeRetrieveById(idClient)
+        val clientToUpdateWith = Client(
+                clientCommand.idClient,
+                clientCommand.prenom,
+                clientCommand.nom,
+                clientCommand.email,
+                clientCommand.adresse,
+                clientCommand.ville,
+                clientCommand.pays,
+                clientCommand.telephone,
+                clientCommand.photo,
+                clientCommand.civilite,
+                clientCommand.projets)
+
+        client.change(clientToUpdateWith)
+        return clientRepository.update(client)
     }
 
 

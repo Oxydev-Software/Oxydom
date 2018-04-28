@@ -4,17 +4,12 @@ import domain.model.projet.Projet
 import portadapter.persistence.entity.EProjet
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class ProjetConverter {
 
-    @Inject
     lateinit var clientConverter: ClientConverter
-    @Inject
     lateinit var interventionConverter: InterventionConverter
-    @Inject
     lateinit var commercialConverter: CommercialConverter
-    @Inject
     lateinit var maquetteConverter: MaquetteConverter
 
     fun fromModelToEntity(projet: Projet): Optional<EProjet> {

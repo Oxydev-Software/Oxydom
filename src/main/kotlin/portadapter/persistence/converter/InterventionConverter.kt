@@ -4,13 +4,10 @@ import domain.model.intervention.Intervention
 import portadapter.persistence.entity.EIntervention
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class InterventionConverter {
 
-    @Inject
     lateinit var commercialConverter: CommercialConverter
-    @Inject
     lateinit var projetConverter: ProjetConverter
 
     fun fromModelToEntity(intervention: Intervention): Optional<EIntervention> {

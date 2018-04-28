@@ -1,20 +1,15 @@
 package portadapter.persistence.converter
 
 import domain.model.instancedemodule.InstanceDeModule
-import domain.model.maquette.repository.MaquetteRepository
 import portadapter.persistence.entity.EInstanceDeModule
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class InstanceDeModuleConverter {
-    @Inject
+
     lateinit var categorieConverter : CategorieConverter
-    @Inject
     lateinit var gammeConverter : GammeConverter
-    @Inject
     lateinit var maquetteConverter: MaquetteConverter
-    @Inject
     lateinit var moduleConverter: ModuleConverter
 
     fun fromModelToEntity(instanceDeModule: InstanceDeModule): Optional<EInstanceDeModule> {

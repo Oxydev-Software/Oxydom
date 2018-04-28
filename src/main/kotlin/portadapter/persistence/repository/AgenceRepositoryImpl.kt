@@ -1,18 +1,16 @@
 package portadapter.persistence.repository
 
-import dagger.Component
 import domain.model.agence.Agence
 import domain.model.agence.repository.AgenceRepository
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import portadapter.persistence.converter.AgenceConverter
 import portadapter.persistence.mapper.AgenceMapper
 import java.util.*
-import javax.inject.Inject
 
+@Component
+class AgenceRepositoryImpl @Autowired constructor(val mapper: AgenceMapper, val converter : AgenceConverter) : AgenceRepository {
 
-class AgenceRepositoryImpl : AgenceRepository {
-    @Inject
-    lateinit var mapper: AgenceMapper
-    val converter = AgenceConverter()
 
     override fun retrieveById(idAgence : Int) : Optional<Agence>{
         val agenceEntity  = mapper.retrieveById(idAgence)

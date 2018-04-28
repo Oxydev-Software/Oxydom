@@ -1,6 +1,5 @@
 package portadapter.persistence.repository
 
-import dagger.Component
 import domain.model.instancedemodule.InstanceDeModule
 import domain.model.instancedemodule.repository.InstanceDeModuleRepository
 

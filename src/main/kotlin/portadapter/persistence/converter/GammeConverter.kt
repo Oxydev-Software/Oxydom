@@ -1,9 +1,7 @@
 package portadapter.persistence.converter
 
 import domain.model.gamme.Gamme
-import domain.model.tva.Tva
 import portadapter.persistence.entity.EGamme
-import portadapter.persistence.entity.ETva
 import java.util.*
 import java.util.stream.Collectors
 

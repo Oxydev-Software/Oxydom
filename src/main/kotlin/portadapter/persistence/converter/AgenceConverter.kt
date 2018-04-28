@@ -1,14 +1,13 @@
 package portadapter.persistence.converter
 
 import domain.model.agence.Agence
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import portadapter.persistence.entity.EAgence
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
-
-class AgenceConverter {
-    @Inject
-    lateinit var fournisseurConverter: FournisseurConverter
+@Component
+class AgenceConverter @Autowired constructor(val fournisseurConverter: FournisseurConverter) {
 
     fun fromModelToEntity(agence: Agence): Optional<EAgence> {
 

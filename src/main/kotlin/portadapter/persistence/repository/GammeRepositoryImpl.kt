@@ -1,6 +1,5 @@
 package portadapter.persistence.repository
 
-import dagger.Component
 import domain.model.gamme.Gamme
 import domain.model.gamme.repository.GammeRepository
 

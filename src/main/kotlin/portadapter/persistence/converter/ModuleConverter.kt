@@ -4,12 +4,9 @@ import domain.model.module.Module
 import portadapter.persistence.entity.EModule
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class ModuleConverter {
-    @Inject
     lateinit var categorieConverter : CategorieConverter
-    @Inject
     lateinit var gammeConverter : GammeConverter
 
     fun fromModelToEntity(module: Module): Optional<EModule> {

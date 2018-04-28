@@ -3,6 +3,7 @@ package application.impl
 import domain.model.projet.Projet
 
 data class ClientCommand(
+        var idClient : Int,
         var prenom : String,
         var nom : String,
         var email : String,

@@ -1,16 +1,15 @@
 package portadapter.persistence.converter
 
 import domain.model.commercial.Commercial
+import org.springframework.beans.factory.annotation.Autowired
 import portadapter.persistence.entity.ECommercial
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class CommercialConverter {
-
-    @Inject
+    @Autowired
     lateinit var agenceConverter: AgenceConverter
-    @Inject
+    @Autowired
     lateinit var projetConverter: ProjetConverter
 
     fun fromModelToEntity(commercial: Commercial): Optional<ECommercial> {

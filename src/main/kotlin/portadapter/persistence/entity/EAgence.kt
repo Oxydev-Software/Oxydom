@@ -1,7 +1,5 @@
 package portadapter.persistence.entity
 
-import domain.model.fournisseur.Fournisseur
-
 data class EAgence(
         var idAgence: Int,
         var telephone: String,

@@ -1,6 +1,5 @@
 package portadapter.persistence.repository
 
-import dagger.Component
 import domain.model.commercial.repository.CommercialRepository
 
 class CommercialRepositoryImpl : CommercialRepository {

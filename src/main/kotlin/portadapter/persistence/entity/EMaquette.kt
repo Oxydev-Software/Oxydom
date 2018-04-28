@@ -1,8 +1,5 @@
 package portadapter.persistence.entity
 
-import domain.model.instancedemodule.InstanceDeModule
-import domain.model.projet.Projet
-import domain.model.tva.Tva
 import java.time.ZonedDateTime
 
 data class EMaquette (

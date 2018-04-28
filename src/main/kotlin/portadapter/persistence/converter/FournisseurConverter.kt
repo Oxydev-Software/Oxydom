@@ -1,14 +1,13 @@
 package portadapter.persistence.converter
 
 import domain.model.fournisseur.Fournisseur
+import org.springframework.beans.factory.annotation.Autowired
 import portadapter.persistence.entity.EFournisseur
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class FournisseurConverter {
-
-    @Inject
+    @Autowired
     lateinit var agenceConverter : AgenceConverter
 
     fun fromModelToEntity(fournisseur: Fournisseur): Optional<EFournisseur> {

@@ -1,6 +1,5 @@
 package portadapter.persistence.repository
 
-import dagger.Component
 import domain.model.intervention.Intervention
 import domain.model.intervention.repository.InterventionRepository
 

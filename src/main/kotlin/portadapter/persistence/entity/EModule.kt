@@ -1,9 +1,5 @@
 package portadapter.persistence.entity
 
-import domain.model.categorie.Categorie
-import domain.model.gamme.Gamme
-import domain.model.instancedemodule.InstanceDeModule
-
 data class EModule(
         var idModule: Int,
         var libelleModule: String,

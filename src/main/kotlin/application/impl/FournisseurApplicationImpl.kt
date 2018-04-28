@@ -1,13 +1,12 @@
 package application.impl
 
 import application.FournisseurApplication
-import dagger.Component
 import domain.model.fournisseur.Fournisseur
 import domain.model.fournisseur.repository.FournisseurRepository
-import javax.inject.Inject
+import org.springframework.beans.factory.annotation.Autowired
 
 class FournisseurApplicationImpl :  FournisseurApplication{
-    @Inject
+    @Autowired
     lateinit var repository: FournisseurRepository
 
     override fun retrieveList(): List<Fournisseur> {

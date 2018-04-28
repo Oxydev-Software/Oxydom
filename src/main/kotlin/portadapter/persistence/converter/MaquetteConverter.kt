@@ -1,20 +1,13 @@
 package portadapter.persistence.converter
 
-import domain.model.instancedemodule.InstanceDeModule
-import domain.model.intervention.Intervention
 import domain.model.maquette.Maquette
-import portadapter.persistence.entity.EIntervention
 import portadapter.persistence.entity.EMaquette
 import java.util.*
 import java.util.stream.Collectors
-import javax.inject.Inject
 
 class MaquetteConverter {
-    @Inject
     lateinit var tvaConverter: TvaConverter
-    @Inject
     lateinit var projetConverter: ProjetConverter
-    @Inject
     lateinit var instanceDeModuleConverter: InstanceDeModuleConverter
 
     fun fromModelToEntity(maquette: Maquette): Optional<EMaquette> {

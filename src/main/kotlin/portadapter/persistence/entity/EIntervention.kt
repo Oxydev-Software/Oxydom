@@ -1,7 +1,5 @@
 package portadapter.persistence.entity
 
-import domain.model.commercial.Commercial
-import domain.model.projet.Projet
 import java.time.ZonedDateTime
 
 class EIntervention(

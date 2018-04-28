@@ -1,6 +1,5 @@
 package portadapter.persistence.factory
 
-import dagger.Component
 import domain.model.module.Module
 import domain.model.module.factory.ModuleFactory
 

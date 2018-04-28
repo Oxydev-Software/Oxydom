@@ -1,14 +1,13 @@
 package application.impl
 
 import application.AgenceApplication
-import dagger.Component
 import domain.model.agence.Agence
 import domain.model.agence.repository.AgenceRepository
-import javax.inject.Inject
+import org.springframework.beans.factory.annotation.Autowired
 
 
 class AgenceApplicationImpl : AgenceApplication{
-    @Inject
+    @Autowired
     lateinit var repository: AgenceRepository
 
     override fun retrieveList(): List<Agence> {
