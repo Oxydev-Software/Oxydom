@@ -31,14 +31,16 @@ Item {
         }
 
         TextField {
-            id: usernom
+            id: utilisateur
             font.pointSize: 15
             Layout.fillWidth: true
             placeholderText: qsTr("Identifiant")
+            text: backend.userName
+            onTextChanged: backend.userName = text
         }
 
         TextField {
-            id: password
+            id: mdp
             clip: false
             renderType: Text.QtRendering
             horizontalAlignment: Text.AlignLeft
@@ -63,7 +65,6 @@ Item {
             onClicked: {
                 toolbar.visible= true
                 stackView.push(Qt.resolvedUrl("Clients.qml"),{nomObjet:"Clients"});
-                //stackView.push(Qt.resolvedUrl("Projets.qml"),{nomObjet:"Projets"});
             }
         }
 
