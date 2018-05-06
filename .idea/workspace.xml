@@ -2,8 +2,243 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a791d91c-f77d-40a1-93c8-3437a470a38b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_jdbc_8_5_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_juli_8_5_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_1_5_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/client/factory/ClientFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/gamme/factory/GammeFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/instancedemodule/factory/InstanceDeModuleFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/intervention/factory/InterventionFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/maquette/factory/MaquetteFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/modele/factory/ModeleFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/module/factory/ModuleFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/projet/factory/ProjetFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/AgenceConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/CategorieConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ClientConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/CommercialConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/FournisseurConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/GammeConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/InstanceDeModuleConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/InterventionConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/MaquetteConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ModuleConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ProjetConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/TvaConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EAgence.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/ECategorie.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/ECommercial.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EGamme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EInstanceDeModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EIntervention.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EMaquette.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EModele.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EProjet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/ETva.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/ClientFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/GammeFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/InstanceDeModuleFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/InterventionFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/MaquetteFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/ModeleFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/ModuleFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/ProjetFactoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/AgenceMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/CategorieMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/CommercialMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/FournisseurMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/GammeMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/InterventionMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ModeleMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ModuleMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ProjetMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/TvaMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/CategorieRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/ClientRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/CommercialRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/FournisseurRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/GammeRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/InstanceDeModuleRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/InterventionRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/MaquetteRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/ModeleRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/ModuleRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/ProjetRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/TvaRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/portadapter/persistence/sqlite/oxydom.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/portadapter/persistence/sqlite/sqlite3.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/portadapter/persistence/sqlite/sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapperIntegrationTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_41.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_41.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_2_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_2_41.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/oxydom-builder_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/oxydom-builder_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/oxydom-builder_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/oxydom-builder_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Login.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Login.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/AgenceApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/AgenceApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/ClientApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/ClientApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/FournisseurApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/FournisseurApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/addingclient/AddingClientApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/addingclient/AddingClientApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/addingclient/AddingClientApplicationImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/addingclient/AddingClientApplicationImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/addingclient/AddingClientCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/addingclient/AddingClientCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/impl/AgenceApplicationImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/impl/AgenceApplicationImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/impl/ClientApplicationImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/impl/ClientApplicationImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/impl/ClientCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/impl/ClientCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/impl/FournisseurApplicationImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/impl/FournisseurApplicationImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/agence/Agence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/agence/Agence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/agence/repository/AgenceRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/agence/repository/AgenceRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/categorie/Categorie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/categorie/Categorie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/categorie/repository/CategorieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/categorie/repository/CategorieRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/client/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/client/Client.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/client/factory/ClientFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/client/repository/ClientRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/client/repository/ClientRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/commercial/Commercial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/commercial/Commercial.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/commercial/repository/CommercialRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/commercial/repository/CommercialRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/fournisseur/Fournisseur.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/fournisseur/Fournisseur.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/fournisseur/repository/FournisseurRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/fournisseur/repository/FournisseurRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/gamme/Gamme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/gamme/Gamme.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/gamme/factory/GammeFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/gamme/repository/GammeRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/gamme/repository/GammeRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/instancedemodule/InstanceDeModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/instancedemodule/InstanceDeModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/instancedemodule/factory/InstanceDeModuleFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/instancedemodule/repository/InstanceDeModuleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/instancedemodule/repository/InstanceDeModuleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/intervention/Intervention.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/intervention/Intervention.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/intervention/factory/InterventionFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/intervention/repository/InterventionRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/intervention/repository/InterventionRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/maquette/Maquette.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/maquette/Maquette.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/maquette/factory/MaquetteFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/maquette/repository/MaquetteRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/maquette/repository/MaquetteRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/modele/Modele.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/modele/Modele.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/modele/factory/ModeleFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/modele/repository/ModeleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/modele/repository/ModeleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/module/Module.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/module/Module.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/module/factory/ModuleFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/module/repository/ModuleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/module/repository/ModuleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/projet/Projet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/projet/Projet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/projet/factory/ProjetFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/projet/repository/ProjetRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/projet/repository/ProjetRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/tva/Tva.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/tva/Tva.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/model/tva/repository/TvaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/tva/repository/TvaRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/AgenceConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/CategorieConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/ClientConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/CommercialConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/FournisseurConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/GammeConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/InstanceDeModuleConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/InterventionConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/MaquetteConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/ModuleConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/ProjetConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/converter/TvaConverter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EAgence.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/ECategorie.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/ECommercial.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EGamme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EInstanceDeModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EIntervention.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EMaquette.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EModele.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/EProjet.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/entity/ETva.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/ClientFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/GammeFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/InstanceDeModuleFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/InterventionFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/MaquetteFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/ModeleFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/ModuleFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/factory/ProjetFactoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/AgenceMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/CategorieMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/CommercialMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/FournisseurMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/GammeMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/InterventionMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/ModeleMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/ModuleMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/ProjetMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/mapper/TvaMapper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/CategorieRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/ClientRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/CommercialRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/FournisseurRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/GammeRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/InstanceDeModuleRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/InterventionRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/MaquetteRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/ModeleRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/ModuleRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/ProjetRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/persistence/repository/TvaRepositoryImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/launch/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/launch/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/converter/ModeleConverter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ModeleConverter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/entity/EClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/entity/EFournisseur.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EFournisseur.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/mapper/ClientMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/mapper/InstanceDeModuleMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/InstanceDeModuleMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/mapper/MaquetteMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/MaquetteMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/repository/AgenceRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/AgenceRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/.idea/.idea.presentation/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/.idea/.idea.presentation/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/.idea/.idea.presentation/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/.idea/.idea.presentation/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/.idea/.idea.presentation/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/.idea/.idea.presentation/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/.idea/.idea.presentation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/.idea/.idea.presentation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/.idea/.idea.presentation/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/.idea/.idea.presentation/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/OxydomBuilder.pro" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/OxydomBuilder.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/OxydomBuilder.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/OxydomBuilder.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/AddClientDialog.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/AddClientDialog.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Clients.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Clients.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Designer2D.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Designer2D.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Designer2DBase.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Designer2DBase.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Designer2DComponent.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Designer2DComponent.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Designer2DMurs.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Designer2DMurs.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Designer2DSlot.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Designer2DSlot.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Gammes.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Gammes.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Login.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Login.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Modeles.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Modeles.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Modules.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Modules.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Projets.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Projets.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/backend.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/backend.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/backend.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/backend.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/back@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/back@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/back@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/back@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/back@4x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/back@4x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/contacts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/contacts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/drawer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/drawer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/drawer@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/drawer@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/drawer@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/drawer@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/drawer@4x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/drawer@4x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/expand.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/expand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/fenetre.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/fenetre.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/invisible.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/invisible.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/loupe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/loupe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/menu@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/menu@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/menu@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/menu@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/menu@4x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/menu@4x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/images/porte.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/images/porte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/main.qml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/main.qml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/presentation.sln" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/presentation.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/qml.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/qml.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/presentation/qtquickcontrols2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/qtquickcontrols2.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressource/portadapter/persistence/configuration/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressource/portadapter/persistence/mapper/ClientMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/portadapter/persistence/mapper/ClientMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressource/resultmap/ClientResultMap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/resultmap/ClientResultMap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/portadapter/persistence/mapper/ClientMapperIntegrationTest.kt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -14,6 +249,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -58,13 +307,111 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ClientMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/portadapter/persistence/mapper/ClientMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientMapper.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="e#50#255#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/launch/Application.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <element signature="e#26#203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientResultMap.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/resultmap/ClientResultMap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="71" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientConverter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ClientConverter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EClient.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EClient.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgenceConverter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/AgenceConverter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategorieConverter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/CategorieConverter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategorieMapper.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/CategorieMapper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -178,9 +525,29 @@
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Supported annotations: ; Presets: spring; Compiler plugin classpath: C:\Users\Matthieu\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-allopen\1.2.41\67fa3f600e72f98b9b29c0cdc19d606df4dfec47\kotlin-allopen-1.2.41.jar" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="allOpenDataStorageTask" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in root project 'oxydom-builder'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Repackage existing JAR and WAR archives so that they can be executed from the command line using 'java -jar'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRepackage" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run the project with support for auto-detecting main class and reloading static resources" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRun" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
@@ -243,6 +610,10 @@
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="findMainClass" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildNeeded" />
@@ -259,9 +630,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4571982235000" />
+        <entry key="$PROJECT_DIR$" value="4569925825355" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1128301033" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="967210459" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1592597880" />
       </map>
     </option>
@@ -277,30 +648,42 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.31/5fe4e513f9127cd9cbc01cd7aed1cef64809a6f0/kotlin-gradle-plugin-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.31/b306d6fc4d26851d8540c96e795130f3e3fc081b/kotlin-gradle-plugin-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.31/719aa4d2c0eaa5727591754a1a419edcb25a3144/kotlin-gradle-plugin-api-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.31/407acaa8552b1bf4b020c2c9c9bab8578b0ed360/kotlin-gradle-plugin-api-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.31/a1a0b714cb760f9bd0f4f9d04915c1748eaefc64/kotlin-stdlib-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.31/153dcd9ed9db246a7e36f4d7609e2a9f4718c674/kotlin-stdlib-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.31/a61c4e03bdea91ee0ba701848d307ddf26773df0/kotlin-compiler-embeddable-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.31/29128887c407ed331d6dceef1a943ef0e51d6cfd/kotlin-compiler-embeddable-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.31/502570adbee637f17c9da8f9eedb2603b32a7e25/kotlin-annotation-processing-gradle-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.31/7270da5bce5e2d59d0f8a7125eb530503489a9ca/kotlin-annotation-processing-gradle-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.31/8fb96fbaa31b151ded5ce132d11053dfd6ba441a/kotlin-android-extensions-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.31/ce9cde5e684db1fe46989899f4ea46e1139d2b00/kotlin-android-extensions-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.31/ba6594af9d74aab1d099760ab5bd0493d0131e59/kotlin-compiler-runner-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.31/c3e737699e40744c6f2dfaffd9a12efa052f9a48/kotlin-compiler-runner-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.31/50562ad98c5398b7070b991b2e8c6da2567d27dc/kotlin-reflect-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.31/17c564968cae80b954b294f8564c492da56bd7b5/kotlin-reflect-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.31/2848047309c65f967363be064215f95d4d151649/kotlin-script-runtime-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.31/7904e817466f39297419e7ba3f296a2b86bb48be/kotlin-script-runtime-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.31/56f8ac3d4e3a32901e8fdcb0af666e4d4e3e82a1/kotlin-build-common-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.31/716e4d4f29c44edec90273e7ab59c7f0cc3ad15f/kotlin-build-common-1.2.31.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.31/345a28ecd54cc684208624fbe467feae15812d52/kotlin-daemon-client-1.2.31-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.31/158877756dbc90875652ea74abf860d481c21d4a/kotlin-daemon-client-1.2.31.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.41/b4b0b8422809558b6f8be302d36ad223c9d715f5/kotlin-gradle-plugin-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.41/18587320bcaffacd1fca5bda7fe0e3e63acc4d30/kotlin-gradle-plugin-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-allopen/1.2.41/67a1405dae8032a0a08cfa43fe98e008c366b390/kotlin-allopen-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-allopen/1.2.41/67fa3f600e72f98b9b29c0cdc19d606df4dfec47/kotlin-allopen-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.5.4.RELEASE/4c67609016a66b7c4f5e99f758db84a8e954381e/spring-boot-gradle-plugin-1.5.4.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.5.4.RELEASE/8a89562ac464e37bc6b5a61214125e28b0cdcb76/spring-boot-gradle-plugin-1.5.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.41/ad3c6987e041c37983dbf798d11fb30ccbbd2b6f/kotlin-gradle-plugin-api-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.41/b02a60e83beaa777c13562fd3e9612ea1963091d/kotlin-gradle-plugin-api-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.41/dc11619be6c45157a142d3753017544896da8e69/kotlin-stdlib-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.41/7e34f009642702250bccd9e5255866f408962a05/kotlin-stdlib-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.41/7da15dbc72cdae97ed4760bc70693393b134dc78/kotlin-compiler-embeddable-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.41/e439cfdc216b070ebd454da892447f5dca96a934/kotlin-compiler-embeddable-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.41/8ac5ef3be550378c36c419606f075f5007297f52/kotlin-annotation-processing-gradle-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.41/870d8f3b110200303a07d4bbfc7bf9066669203b/kotlin-annotation-processing-gradle-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.41/6926ea357237058db2823f8f388009ccb8f11035/kotlin-android-extensions-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.41/10100eedfe2e26b9cf18b850d997b42d02af7500/kotlin-android-extensions-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.41/b0e604633bacf585fd493d37138918853ad1eecc/kotlin-compiler-runner-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.41/c2bd43e2bf7d6f26e47fbdca79502b62fe130696/kotlin-compiler-runner-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.41/2b440a2b5eb92330251e22fb7b097613796160e3/kotlin-reflect-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.41/e4d6728a4fa55dbfb510aeea25c072c7c51d94/kotlin-reflect-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.5.4.RELEASE/336547a1d63091667b2a3e152de4e5d43e8b5cd6/spring-boot-loader-tools-1.5.4.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.5.4.RELEASE/67ba8d60de0aa7633e8b9a50eb11a83d69f944/spring-boot-loader-tools-1.5.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.3.RELEASE/7bb9ab86474b9ff2e7aa8ea3609878a1750e3f90/dependency-management-plugin-1.0.3.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.3.RELEASE/c7fc988680e19cef9bf91de0c39b891e4c8dca2d/dependency-management-plugin-1.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.41/f60225c5404573dcb8434ad509b98bacfb13bea3/kotlin-script-runtime-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.41/e291b12913910c260ce878f9a76c84203cf710a1/kotlin-script-runtime-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.41/dcf158bd432f0b0bf7e92c670646e1bafd5d934c/kotlin-build-common-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.41/3ca2f7f659163dfdb9f180b64e9964c7c176c171/kotlin-build-common-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.41/6b269dda00ff49a17c7f3223be6c8e64a9a4a606/kotlin-daemon-client-1.2.41-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.41/b9cb88843eeba0f43542daa00c7949e40e9e2852/kotlin-daemon-client-1.2.41.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.9.RELEASE/f85656c1404f6e4fddbc1ca2180748856880913f/spring-core-4.3.9.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.9.RELEASE/430b7298bfb85d66fb61e19ca8f06231b911e9f5/spring-core-4.3.9.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -466,6 +849,11 @@
         </entry>
       </map>
     </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -473,11 +861,37 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/domainmodel/model/module/Module.kt" />
         <option value="$PROJECT_DIR$/src/com/oxydom/main/domainmodel/model/instancedemodule/InstanceDeModule.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/com/oxydom/main/domainmodel/model/module/Module.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/domainmodel/model/module/Module.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/domainmodel/model/instancedemodule/InstanceDeModule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/domainmodel/model/module/repository/Module.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/factory/ClientFactoryImpl.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/converter/ClientConverter.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/converter/AgenceConverter.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/mapper/AgenceMapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/repository/AgenceRepositoryImpl.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/launch/Configuration.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/portadapter/persistence/mapper/ClientMapperIntegrationTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/application/impl/AgenceApplicationImpl.kt" />
+        <option value="$PROJECT_DIR$/src/ressource/portadapter/persistence/configuration/spring-config.xml" />
+        <option value="$PROJECT_DIR$/src/ressource/portadapter/persistence/configuration/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/launch/ApplicationConfiguration.Kt.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/launch/ApplicationConfiguration.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/launch/Bean.kt.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/launch/Bean.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/entity/EAgence.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/entity/EClient.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/mapper/ClientMapper.kt" />
+        <option value="$PROJECT_DIR$/src/ressource/portadapter/persistence/mapper/ClientMapper.xml" />
+        <option value="$PROJECT_DIR$/src/ressource/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapperIntegrationTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/launch/Application.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapper.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/portadapter/persistence/mapper/ClientMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ClientConverter.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EClient.kt" />
       </list>
     </option>
   </component>
@@ -502,10 +916,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="21" />
     <option name="width" value="1280" />
-    <option name="height" value="778" />
+    <option name="height" value="779" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -547,9 +961,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -581,7 +992,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="oxydom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
@@ -589,8 +1000,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="categorie" type="462c0819:PsiDirectoryNode" />
+              <item name="oxydom" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
@@ -598,53 +1009,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="gamme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="gamme" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="instancedemodule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="oxydom" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -653,6 +1018,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="oxydom" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
               <item name="converter" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -662,6 +1028,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="oxydom" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -670,16 +1037,22 @@
               <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -688,40 +1061,31 @@
               <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oxydom-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oxydom-Builder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="resultmap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="oxydom-builder" type="58d84e3e:PackageViewProjectNode" />
+              <item name="oxydom-builder" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="oxydom-builder" type="58d84e3e:PackageViewProjectNode" />
+              <item name="oxydom-builder" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="oxydom-builder_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,7 +1096,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19418484" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -740,11 +1104,11 @@
       <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\domainmodel\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src\main" />
       <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src\main\kotlin" />
-      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src" />
-      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder" />
-      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src\com\oxydom\main" />
-      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\domainmodel\model\module" />
+      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src\ressource" />
+      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src\ressource\portadapter\persistence\mapper" />
+      <recent name="C:\Users\Matthieu\Documents\RIL\PROJET\MADERA\Oxydom-Builder\src\main\kotlin\portadapter\persistence\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -759,71 +1123,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Oxydom-Builder [build]">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Oxydom-Builder [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Oxydom-Builder [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Oxydom-Builder [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="init" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="oxydom-builder" />
-      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -840,6 +1145,10 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oxydom-builder_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.oxydom.launch.ApplicationKt" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -888,20 +1197,6 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list>
-      <item itemvalue="Gradle.Oxydom-Builder [clean]" />
-      <item itemvalue="Gradle.Oxydom-Builder [build]" />
-      <item itemvalue="Gradle.Oxydom-Builder [init]" />
-      <item itemvalue="Groovy.build" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Groovy.build" />
-        <item itemvalue="Gradle.Oxydom-Builder [init]" />
-        <item itemvalue="Gradle.Oxydom-Builder [build]" />
-        <item itemvalue="Gradle.Oxydom-Builder [clean]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -918,11 +1213,55 @@
       <workItem from="1522152600470" duration="2392000" />
       <workItem from="1524152097873" duration="1311000" />
       <workItem from="1524156315155" duration="29000" />
+      <workItem from="1524914846979" duration="1508000" />
+      <workItem from="1525160083930" duration="719000" />
+      <workItem from="1525161103328" duration="3459000" />
+      <workItem from="1525262542296" duration="4779000" />
     </task>
+    <task id="LOCAL-00001" summary="fucking fix">
+      <created>1524915082789</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524915082789</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ClientMapperIntegrationTest_retrieveById_(1) - 2018.05.01 at 10h 25m 03s.xml">
+      <configuration name="ClientMapperIntegrationTest.retrieveById (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest - 2018.05.01 at 10h 32m 59s.xml">
+      <configuration name="ClientMapperIntegrationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(1) - 2018.05.01 at 10h 33m 26s.xml">
+      <configuration name="ClientMapperIntegrationTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(2) - 2018.05.01 at 10h 34m 25s.xml">
+      <configuration name="ClientMapperIntegrationTest (2)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(4) - 2018.05.01 at 10h 35m 49s.xml">
+      <configuration name="ClientMapperIntegrationTest (4)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(5) - 2018.05.01 at 10h 36m 05s.xml">
+      <configuration name="ClientMapperIntegrationTest (5)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest - 2018.05.01 at 10h 36m 34s.xml">
+      <configuration name="ClientMapperIntegrationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(1) - 2018.05.01 at 10h 37m 21s.xml">
+      <configuration name="ClientMapperIntegrationTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(2) - 2018.05.01 at 10h 38m 30s.xml">
+      <configuration name="ClientMapperIntegrationTest (2)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ClientMapperIntegrationTest_(2) - 2018.05.01 at 10h 39m 13s.xml">
+      <configuration name="ClientMapperIntegrationTest (2)" configurationId="TestNG" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5187000" />
+    <option name="totallyTimeSpent" value="15652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -934,37 +1273,44 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="778" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32924107" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32924107" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3325893" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2546875" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.5635005" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32890365" />
+      <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3281768" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32896653" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4310595" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.33042213" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33042213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.3295302" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.48389262" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32924107" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3281768" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32928178" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -973,192 +1319,356 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fucking fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fucking fix" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/module/Module.kt" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/module/Module.kt" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/module/Module.kt" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/instancedemodule/InstanceDeModule.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/categorie/Categorie.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/gamme/Gamme.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/domainmodel/model/module/repository/Module.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domain/model/instancedemodule/InstanceDeModule.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/instancedemodule/InstanceDeModule.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domain/model/gamme/Gamme.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/gamme/Gamme.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domain/model/gamme/factory/GammeFactory.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/gamme/factory/GammeFactory.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/domain/model/categorie/Categorie.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/model/categorie/Categorie.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/converter/AgenceConverter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/converter/InterventionConverter.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/InterventionConverter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/converter/InstanceDeModuleConverter.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/InstanceDeModuleConverter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-780">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/factory/InstanceDeModuleFactoryImpl.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/InstanceDeModuleFactoryImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/factory/InterventionFactoryImpl.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/InterventionFactoryImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/mapper/FournisseurMapper.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/FournisseurMapper.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/portadapter/persistence/repository/InterventionRepositoryImpl.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/InterventionRepositoryImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Clients.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Clients.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6356" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Gammes.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Gammes.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2936" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/AddClientDialog.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/AddClientDialog.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-656" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Projets.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Projets.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2411" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Modules.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Modules.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2366" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Modeles.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Modeles.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2771" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/presentation/Pages/Login.qml">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/presentation/Pages/Login.qml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-491" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/ClientApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/FournisseurApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ProjetConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/factory/ClientFactoryImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar!/javax/validation/constraints/Null.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/CommercialConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/AgenceMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/repository/AgenceRepositoryImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="e#44#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/launch/Configuration/kt.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/launch/Configuration.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.3.9.RELEASE/35bf4c38c9245f5baeeda4bea7c41f4f33c5daf3/spring-test-4.3.9.RELEASE.jar!/org/springframework/test/context/testng/AbstractTestNGSpringContextTests.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.3.9.RELEASE/da9de8c29fc25d2ee0c5c09daec03e853a51bb25/spring-test-4.3.9.RELEASE-sources.jar!/org/springframework/test/context/testng/AbstractTestNGSpringContextTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2507">
+          <caret line="109" column="11" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
+          <folding>
+            <element signature="e#4701#4702#0" expanded="true" />
+            <element signature="e#4768#4769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/AgenceApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/impl/AgenceApplicationImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/application/impl/ClientApplicationImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EAgence.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/launch/Bean.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ressource/portadapter/persistence/configuration/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ressource/portadapter/persistence/configuration/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/toto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapperIntegrationTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/AgenceConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/CategorieConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/CategorieMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/mapper/ClientMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#50#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/resultmap/ClientResultMap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/launch/Application.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#26#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/portadapter/persistence/mapper/ClientMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/converter/ClientConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/fr/oxydom/portadapter/persistence/entity/EClient.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
       </provider>
     </entry>
   </component>
