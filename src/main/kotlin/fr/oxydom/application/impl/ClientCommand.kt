@@ -1,6 +1,5 @@
 package fr.oxydom.application.impl
 
-import fr.oxydom.model.projet.Projet
 
 data class ClientCommand(
         var idClient : Int,
@@ -12,7 +11,6 @@ data class ClientCommand(
         var pays : String,
         var telephone : String,
         var photo : String,
-        var civilite : String,
-        var projets : List<Projet>
+        var civilite : String
 ) {
 }

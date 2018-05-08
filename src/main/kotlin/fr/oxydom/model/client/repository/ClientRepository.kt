@@ -6,6 +6,6 @@ import java.util.*
 interface ClientRepository {
     fun retrieveById(idClient: Int): Optional<Client>
     fun safeRetrieveById(idClient: Int): Client
-    fun retrieveList()
+    fun retrieveList() : List<Client>
     fun update(client: Client): Client
 }

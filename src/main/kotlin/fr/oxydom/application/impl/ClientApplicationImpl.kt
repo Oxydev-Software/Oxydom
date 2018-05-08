@@ -4,8 +4,10 @@ import fr.oxydom.application.ClientApplication
 import fr.oxydom.model.client.Client
 import fr.oxydom.model.client.repository.ClientRepository
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import java.util.*
 
+@Component
 class ClientApplicationImpl : ClientApplication{
     @Autowired
     lateinit var clientRepository: ClientRepository
@@ -14,7 +16,7 @@ class ClientApplicationImpl : ClientApplication{
         return clientRepository.retrieveById(idClient)
     }
 
-    override fun retrieveList() {
+    override fun retrieveList(): List<Client> {
         return clientRepository.retrieveList();
     }
 
@@ -30,8 +32,7 @@ class ClientApplicationImpl : ClientApplication{
                 clientCommand.pays,
                 clientCommand.telephone,
                 clientCommand.photo,
-                clientCommand.civilite,
-                clientCommand.projets)
+                clientCommand.civilite)
 
         client.change(clientToUpdateWith)
         return clientRepository.update(client)

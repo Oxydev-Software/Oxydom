@@ -6,6 +6,6 @@ import java.util.*
 
 interface ClientApplication {
     fun retrieveById(idClient : Int) : Optional<Client>
-    fun retrieveList()
+    fun retrieveList(): List<Client>
     fun update(idClient: Int, clientCommand : ClientCommand) : Client
 }

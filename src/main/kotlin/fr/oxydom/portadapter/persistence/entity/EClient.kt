@@ -10,6 +10,5 @@ data class EClient(
         var pays: String?=null,
         var telephone: String?=null,
         var photo: String?=null,
-        var civilite: String?=null,
-        var eprojets: List<EProjet>?= mutableListOf()
+        var civilite: String?=null
 )

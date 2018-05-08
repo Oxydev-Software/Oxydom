@@ -1,7 +1,5 @@
 package fr.oxydom.model.client
 
-import fr.oxydom.model.projet.Projet
-
 data class Client(
         var id: Int?,
         var prenom: String,
@@ -12,8 +10,7 @@ data class Client(
         var pays: String,
         var telephone: String,
         var photo: String?,
-        var civilite: String,
-        var projets: List<Projet>
+        var civilite: String
 ) {
     fun change(client: Client) {
         prenom = client.prenom
@@ -22,7 +19,6 @@ data class Client(
         civilite = client.civilite
         pays = client.pays
         email = client.email
-        projets = client.projets
         photo = client.photo
         ville = client.ville
     }

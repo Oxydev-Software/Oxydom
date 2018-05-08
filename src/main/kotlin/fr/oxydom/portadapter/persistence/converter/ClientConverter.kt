@@ -7,7 +7,7 @@ import java.util.*
 import java.util.stream.Collectors
 
 @Component
-class ClientConverter(var projetConverter: ProjetConverter)  {
+class ClientConverter  {
 
     fun fromModelToEntity(client: Client): Optional<EClient> {
 
@@ -21,8 +21,7 @@ class ClientConverter(var projetConverter: ProjetConverter)  {
                 client.pays,
                 client.telephone,
                 client.photo,
-                client.civilite,
-                projetConverter.fromModelsToEntities(client.projets))
+                client.civilite)
 
         return Optional.of(clientEntity)
     }
@@ -41,11 +40,9 @@ class ClientConverter(var projetConverter: ProjetConverter)  {
                 eClient.pays!!,
                 eClient.telephone!!,
                 eClient.photo,
-                eClient.civilite!!,
-                projetConverter.fromEntitiesToModels(eClient.eprojets!!)
-        )
+                eClient.civilite!!)
 
-        return Optional.of(client);
+        return Optional.of(client)
     }
 
     fun fromEntitiesToModels(clientEntities: List<EClient>): List<Client> {

@@ -8,7 +8,7 @@ import fr.oxydom.portadapter.persistence.entity.EClient
 import fr.oxydom.portadapter.persistence.mapper.ClientMapper
 import java.util.*
 
-class ClientRepositoryImpl @Autowired constructor(val clientConverter : ClientConverter, val clientMapper: ClientMapper) : ClientRepository {
+class ClientRepositoryImpl (@Autowired private val clientConverter : ClientConverter,@Autowired private val clientMapper: ClientMapper) : ClientRepository {
 
     override fun safeRetrieveById(idClient: Int): Client {
         val client = clientConverter.fromEntityToModel(internalRetrieveEntity(idClient).get()).get()
@@ -20,8 +20,8 @@ class ClientRepositoryImpl @Autowired constructor(val clientConverter : ClientCo
         return clientConverter.fromEntityToModel(internalRetrieveEntity(idClient).orElse(null))
     }
 
-    override fun retrieveList() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun retrieveList(): List<Client> {
+        return clientConverter.fromEntitiesToModels(clientMapper.retrieveList())
     }
 
     override fun update(client: Client) : Client{
